@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        allow_any="False"
+        cookie_persistence="False"
+        default_skin="goldensus.diazotheme">
+
+  <object name="goldensus_custom"
+      meta_type="Filesystem Directory View"
+      directory="goldensus.diazotheme:skins/goldensus_custom"/>
+
+  <skin-path name="goldensus.diazotheme" based-on="Sunburst Theme">
+    <layer name="goldensus_custom"
+        insert-after="custom"/>
+  </skin-path>
+
+</object>

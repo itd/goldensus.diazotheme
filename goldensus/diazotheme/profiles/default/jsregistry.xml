@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+  <javascript id="++theme++goldensus.diazotheme/bootstrap/js/bootstrap.js"
+    cacheable="True"
+    compression="none"
+    cookable="True"
+    enabled="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    inline="False"
+    insert-after="*"
+    />
+  <!--insert-after="++resource++collective.js.leaflet/leaflet.js"-->
+
+
+  <javascript id="++theme++goldensus.diazotheme/js/gsus.js"
+    cacheable="True"
+    compression="none"
+    cookable="True"
+    enabled="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    inline="False"
+    insert-after="++theme++goldensus.diazotheme/bootstrap/js/bootstrap.js"
+    />
+
+  <!--avoid conflicts between Plone's mobile stylesheet and bootstrap-->
+  <stylesheet id="mobile.css" enabled="False" />
+
+</object>
